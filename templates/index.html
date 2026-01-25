@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pneumonia Detector</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .main-content {
+      margin-top: 80px;
+      text-align: center;
+    }
+    .main-content h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .main-content p {
+      font-size: 18px;
+      color: #555;
+    }
+    .btn-diagnose {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">🩺 Pneumonia Detector</a>
+    <div class="ml-auto">
+      <a class="nav-link" href="/upload">Upload</a>
+      <a class="nav-link" href="/about">About</a>
+    </div>
+  </nav>
+
+  <div class="container main-content">
+    <h2>Welcome to Pneumonia Detection</h2>
+    <p>This tool uses <strong>VGG16</strong> to detect pneumonia from chest X-rays.</p>
+    <a href="/upload" class="btn btn-primary btn-diagnose">Start Diagnosis</a>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About This Project</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #343a40;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .nav-link {
+      color: white;
+      font-size: 16px;
+      text-decoration: underline;
+      margin-left: 40px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2c3e50;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p, li {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="/">🩺 Pneumonia Detector</a>
+    <a class="nav-link" href="/upload">Upload</a>
+  </nav>
+
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      This web application is designed to assist in the early detection of pneumonia using chest X-ray images. It leverages deep learning techniques to provide fast, reliable predictions that can support clinical decision-making.
+    </p>
+
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li>Uses the VGG16 convolutional neural network architecture.</li>
+      <li>Trained on the publicly available Kermany dataset.</li>
+      <li>Provides prediction confidence and clinical suggestions.</li>
+    </ul>
+
+    <p>
+      While this tool is not a substitute for professional medical advice, it demonstrates the potential of AI in radiology and healthcare diagnostics.
+    </p>
+  </div>
+
+</body>
+</html>

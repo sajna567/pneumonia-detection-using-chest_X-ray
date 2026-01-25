@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.upload-box {
+    width: 600px;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.upload-title {
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.file-label {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.file-label:hover {
+    background-color: #d2709e;
+}
+
+.file-label input[type="file"] {
+    display: none;
+}
+
+.predict-button {
+    padding: 14px 32px;
+    font-size: 1.1em;
+    background-color: #2ecc71;
+    color: rgb(240, 184, 184);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.predict-button:hover {
+    background-color: #27ae60;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-btn {
+    padding: 12px 24px;
+    font-size: 1em;
+    background-color: #34495e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #2c3e50;
+}
+.navbar-brand {
+  color: white;
+  font-size: 18px;
+  text-decoration: underline;
+}
+body {
+  background-image: url("/static/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+

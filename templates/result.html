@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #d2e1f0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .nav-link {
+      color: #fcd1eb !important;
+    }
+    .result-section {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+    .result-box {
+      background-color: #fbdcdc;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+    }
+    .result-box h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .result-box p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .result-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .result-images img {
+      max-width: 300px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">🩺 Pneumonia Detector</a>
+    <div class="ml-auto">
+      <a class="nav-link" href="/upload">Upload</a>
+      <a class="nav-link" href="/about">About</a>
+    </div>
+  </nav>
+
+  <div class="result-section">
+    <div class="result-box">
+      <h3>Prediction Result</h3>
+      <p><strong>Diagnosis:</strong><h2> {{ label }}</h2> </p>
+      <p><strong>Confidence:</strong><strong> {{ confidence }}%</strong> </p>
+      <p><strong>Suggestion:</strong><strong> {{ suggestion }}</strong> </p>
+
+      <div class="result-images">
+  <div>
+    <p><strong>Uploaded X-ray</strong></p>
+   <img src="{{ url_for('static', filename='images/' + filename) }}" alt="Uploaded X-ray" width="300">
+
+
+
+  </div>
+</div>
+
+  </div>
+
+</body>
+</html>
+  
